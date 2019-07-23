@@ -25,7 +25,8 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   ASFoundation is fundamental libs.
+                   ASFoundation is like scaffold foundation libs which can help you easily, quickly build a App,
+                   based on it you could follow a clear pattern and path to rebuild your App.
                    DESC
 
   s.homepage     = "https://github.com/AppScaffold/ASFoundation"
@@ -62,6 +63,7 @@ Pod::Spec.new do |s|
   #
 
   s.platform     = :ios, "9.0"
+  s.swift_versions = "4.2"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
