@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Reachability
 
 public typealias JSON = [String: Any]
 public typealias HTTPHeaders = [String: String]
