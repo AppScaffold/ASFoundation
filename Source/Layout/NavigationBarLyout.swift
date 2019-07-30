@@ -4,7 +4,7 @@
 //  Created by Jesse on 2019/3/10.
 //
 
-import Foundation
+import UIKit
 
 extension UINavigationBar {
     public func setupTranslucent() {

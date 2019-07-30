@@ -5,6 +5,9 @@
 
 // StretchyFlowLayout
 // in order to stretch header of collection view when user is scolling.
+
+import UIKit
+
 class StretchyFlowLayout: UICollectionViewFlowLayout {
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let attributes = super.layoutAttributesForElements(in: rect) else { return nil }

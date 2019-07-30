@@ -5,7 +5,7 @@
 //  Created by Jesse on 2019/3/3.
 //
 
-import Foundation
+import UIKit
 
 // some class which is able to extend its responsibility, such as ability of route
 public protocol Extensible {

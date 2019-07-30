@@ -4,7 +4,7 @@
 //  Created by Jesse on 2019/3/12.
 //
 
-import Foundation
+import UIKit
 
 public enum ScrollDirection {
     case up(CGFloat)
