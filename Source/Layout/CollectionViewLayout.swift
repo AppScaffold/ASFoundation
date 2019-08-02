@@ -8,8 +8,8 @@
 
 import UIKit
 
-class StretchyFlowLayout: UICollectionViewFlowLayout {
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+public class StretchyFlowLayout: UICollectionViewFlowLayout {
+    public override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let attributes = super.layoutAttributesForElements(in: rect) else { return nil }
         
         let offset = collectionView!.contentOffset
@@ -31,14 +31,14 @@ class StretchyFlowLayout: UICollectionViewFlowLayout {
         return attributes
     }
     
-    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+    public override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         guard let _ = collectionView else { return false }
         return true
     }
 }
 
 // MARK: Sticky flow layout
-class StickyFlowLayout: UICollectionViewFlowLayout {
+public class StickyFlowLayout: UICollectionViewFlowLayout {
     override init() {
         super.init()
         if #available(iOS 9.0, *) {
@@ -55,7 +55,7 @@ class StickyFlowLayout: UICollectionViewFlowLayout {
         }
     }
     
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    public override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let attributes = super.layoutAttributesForElements(in: rect) else { return nil }
         
         for attribute in attributes {
@@ -65,7 +65,7 @@ class StickyFlowLayout: UICollectionViewFlowLayout {
         return attributes
     }
     
-    override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+    public override func layoutAttributesForSupplementaryView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         guard let attributes = super.layoutAttributesForSupplementaryView(ofKind: elementKind, at: indexPath) else { return nil }
         adjustAttributesIfNeeded(attributes)
         return attributes
