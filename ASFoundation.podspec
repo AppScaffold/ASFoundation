@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #
 
   # s.source       = { :git => "https://github.com/AppScaffold/ASFoundation.git", :tag => "#{s.version}" }
-  s.source	= {"http": "https://github.com/AppScaffold/ASFoundation/releases/download/0.0.3/ASFoundation.framework.zip"}
+  s.source	= {"http": "https://github.com/AppScaffold/ASFoundation/releases/download/0.0.4/ASFoundation.framework.zip"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
