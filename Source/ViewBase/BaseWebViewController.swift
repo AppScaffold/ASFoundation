@@ -18,6 +18,9 @@ open class ASWebViewController: UIViewController {
         self.progressView = UIProgressView()
         self.originURL = url
         super.init(nibName: nil, bundle: nil)
+        // KVO
+        webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
+        webView.addObserver(self, forKeyPath: "loading", options: .new, context: nil)
     }
 
     required public init?(coder aDecoder: NSCoder) {
@@ -26,10 +29,6 @@ open class ASWebViewController: UIViewController {
 
     override open func viewDidLoad() {
         setupUI()
-
-        // KVO
-        webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
-        webView.addObserver(self, forKeyPath: "loading", options: .new, context: nil)
 
         // load data
         load()
