@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// A Style block struct
 public struct Style<View: UIView> {
     
     public let style: (View) -> Void
@@ -22,7 +23,24 @@ public struct Style<View: UIView> {
 }
 
 extension UIView {
-    
+    /**
+     Set Global Style.
+     
+     The following example shows how applying Global style to a
+     `UILabel`:
+     
+         enum Stylesheet {
+            static let title = Style<UILabel> {
+                $0.font = .systemFont(ofSize: 13)
+                $0.numberOfLines = 0
+            }
+         }
+     
+         // UILabel(style: Stylesheet.title)
+     
+     - Parameters:
+        - style: A `Style` to apply
+     */
     public convenience init<V>(style: Style<V>) {
         self.init(frame: .zero)
         apply(style)
