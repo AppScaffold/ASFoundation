@@ -33,6 +33,7 @@ extension PHPhotoLibrary {
             #if DEBUG
             fatalError()
             #endif
+            return ""
         }
     }
 }
