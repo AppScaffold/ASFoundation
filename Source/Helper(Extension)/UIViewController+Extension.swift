@@ -17,7 +17,7 @@ import UIKit
 }
 
 extension UIViewController: AvoidKeyboardOverlayProtocol {
-    public func as_scrollViewForKeyboard() -> UIScrollView? {
+    open func as_scrollViewForKeyboard() -> UIScrollView? {
         return nil
     }
     
