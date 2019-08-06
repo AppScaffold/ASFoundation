@@ -53,6 +53,7 @@
 		88886F9522EEDF03000F5871 /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88886F7822EEDF03000F5871 /* KeychainSwiftDistrib.swift */; };
 		88A71BE822F73A5F007B278C /* Permission+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A71BE722F73A5F007B278C /* Permission+Extension.swift */; };
 		88A71BEB22F82FA4007B278C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A71BEA22F82FA4007B278C /* UIViewController+Extension.swift */; };
+		88FB95A022F9861E000D5CA7 /* ASRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FB959F22F9861E000D5CA7 /* ASRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		88886F7822EEDF03000F5871 /* KeychainSwiftDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftDistrib.swift; sourceTree = "<group>"; };
 		88A71BE722F73A5F007B278C /* Permission+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Extension.swift"; sourceTree = "<group>"; };
 		88A71BEA22F82FA4007B278C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		88FB959F22F9861E000D5CA7 /* ASRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,13 +135,14 @@
 			isa = PBXGroup;
 			children = (
 				88886F5622EEDF03000F5871 /* ViewBase */,
-				88886F5B22EEDF03000F5871 /* Error.swift */,
 				88886F5C22EEDF03000F5871 /* Helper(Extension) */,
 				88886F6522EEDF03000F5871 /* Layout */,
-				88886F6822EEDF03000F5871 /* Dependency.swift */,
-				88886F6922EEDF03000F5871 /* Style.swift */,
 				88886F6A22EEDF03000F5871 /* DeStringers */,
 				88886F6D22EEDF03000F5871 /* RestClient */,
+				88886F6922EEDF03000F5871 /* Style.swift */,
+				88886F6822EEDF03000F5871 /* Dependency.swift */,
+				88886F5B22EEDF03000F5871 /* Error.swift */,
+				88FB959F22F9861E000D5CA7 /* ASRouter.swift */,
 				88886F7822EEDF03000F5871 /* KeychainSwiftDistrib.swift */,
 			);
 			name = Source;
@@ -348,6 +351,7 @@
 				88886F7922EEDF03000F5871 /* BaseTableViewProvider.swift in Sources */,
 				88886F8922EEDF03000F5871 /* Style.swift in Sources */,
 				88886F8022EEDF03000F5871 /* Extensible.swift in Sources */,
+				88FB95A022F9861E000D5CA7 /* ASRouter.swift in Sources */,
 				88886F7E22EEDF03000F5871 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
