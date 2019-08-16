@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ASFoundation"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "ASFoundation is fundamental libs."
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #
 
   # s.source       = { :git => "https://github.com/AppScaffold/ASFoundation.git", :tag => "#{s.version}" }
-  s.source	= {"http": "https://github.com/AppScaffold/ASFoundation/releases/download/0.0.6/ASFoundation.framework.zip"}
+  s.source	= {"http": "https://github.com/AppScaffold/ASFoundation/releases/download/0.0.7/ASFoundation.framework.zip"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
