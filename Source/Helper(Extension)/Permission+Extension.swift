@@ -32,8 +32,9 @@ extension PHPhotoLibrary {
         @unknown default:
             #if DEBUG
             fatalError()
-            #endif
+            #else
             return ""
+            #endif
         }
     }
 }

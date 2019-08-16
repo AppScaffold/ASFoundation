@@ -9,9 +9,9 @@ import UIKit
 import WebKit
 
 open class ASWebViewController: UIViewController {
-    var webView: WKWebView
+    let webView: WKWebView
     private(set) var originURL: URL
-    var progressView: UIProgressView
+    let progressView: UIProgressView
 
     public init(url: URL) {
         self.webView = WKWebView()
