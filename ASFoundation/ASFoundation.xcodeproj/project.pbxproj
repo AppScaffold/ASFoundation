@@ -25,7 +25,7 @@
 		88886F7922EEDF03000F5871 /* BaseTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88886F5722EEDF03000F5871 /* BaseTableViewProvider.swift */; };
 		88886F7A22EEDF03000F5871 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88886F5822EEDF03000F5871 /* NibView.swift */; };
 		88886F7B22EEDF03000F5871 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88886F5922EEDF03000F5871 /* BaseWebViewController.swift */; };
-		88886F7C22EEDF03000F5871 /* BaseViewContainerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88886F5A22EEDF03000F5871 /* BaseViewContainerProvider.swift */; };
+		88886F7C22EEDF03000F5871 /* BaseViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88886F5A22EEDF03000F5871 /* BaseViewContainer.swift */; };
 		88886F7D22EEDF03000F5871 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88886F5B22EEDF03000F5871 /* Error.swift */; };
 		88886F7E22EEDF03000F5871 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88886F5D22EEDF03000F5871 /* Date+Extension.swift */; };
 		88886F7F22EEDF03000F5871 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88886F5E22EEDF03000F5871 /* Optional+Extension.swift */; };
@@ -63,7 +63,7 @@
 		88886F5722EEDF03000F5871 /* BaseTableViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewProvider.swift; sourceTree = "<group>"; };
 		88886F5822EEDF03000F5871 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		88886F5922EEDF03000F5871 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
-		88886F5A22EEDF03000F5871 /* BaseViewContainerProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewContainerProvider.swift; sourceTree = "<group>"; };
+		88886F5A22EEDF03000F5871 /* BaseViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewContainer.swift; sourceTree = "<group>"; };
 		88886F5B22EEDF03000F5871 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		88886F5D22EEDF03000F5871 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		88886F5E22EEDF03000F5871 /* Optional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 				88886F5722EEDF03000F5871 /* BaseTableViewProvider.swift */,
 				88886F5822EEDF03000F5871 /* NibView.swift */,
 				88886F5922EEDF03000F5871 /* BaseWebViewController.swift */,
-				88886F5A22EEDF03000F5871 /* BaseViewContainerProvider.swift */,
+				88886F5A22EEDF03000F5871 /* BaseViewContainer.swift */,
 			);
 			path = ViewBase;
 			sourceTree = "<group>";
@@ -329,7 +329,7 @@
 				88886F7A22EEDF03000F5871 /* NibView.swift in Sources */,
 				88886F8E22EEDF03000F5871 /* Cache.swift in Sources */,
 				88886F9322EEDF03000F5871 /* Reachability.swift in Sources */,
-				88886F7C22EEDF03000F5871 /* BaseViewContainerProvider.swift in Sources */,
+				88886F7C22EEDF03000F5871 /* BaseViewContainer.swift in Sources */,
 				88886F9122EEDF03000F5871 /* Result.swift in Sources */,
 				88886F8522EEDF03000F5871 /* ScrollView+Extension.swift in Sources */,
 				88A71BEB22F82FA4007B278C /* UIViewController+Extension.swift in Sources */,
