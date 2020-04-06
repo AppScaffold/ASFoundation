@@ -8,31 +8,6 @@
 
 import Foundation
 
-public enum Result<T> {
-    case success(T)
-    case failure(Error)
-    
-    var isSuccess: Bool {
-        switch self {
-        case .success:
-            return true
-        case .failure:
-            return false
-        }
-    }
-}
-
-extension Result {
-    public init(value: T?, or error: Error) {
-        guard let value = value else {
-            self = .failure(error)
-            return
-        }
-        
-        self = .success(value)
-    }
-}
-
 // MARK: - CustomStringConvertible
 
 extension Result: CustomStringConvertible {

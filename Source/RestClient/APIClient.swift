@@ -28,7 +28,7 @@ public protocol APIClient {
     
     var commonParams: JSON { get }
     
-    func load<T>(resource: Resource<T>, completion: @escaping (Result<T>) -> ()) -> URLSessionDataTask?
+    func load<T>(resource: Resource<T>, completion: @escaping (Result<T, Error>) -> ()) -> URLSessionDataTask?
     
     func isAuthenticated() -> Bool
     
@@ -40,9 +40,9 @@ public protocol APIClient {
 
 public extension APIClient {
     @discardableResult
-    func load<T>(resource: Resource<T>, completion: @escaping (Result<T>) -> ()) -> URLSessionDataTask? {
+    func load<T>(resource: Resource<T>, completion: @escaping (Result<T, Error>) -> ()) -> URLSessionDataTask? {
         // Checking internet connection availability
-        if Reachability()?.connection == .none {
+        if Reachability()?.connection == Reachability.Connection.none {
             completion(.failure(APIError.noInternetConnection))
             return nil
         }
@@ -68,7 +68,11 @@ public extension APIClient {
             }
             
             if (200..<300) ~= response.statusCode {
-                completion(Result(value: data.flatMap(resource.parse), or: APIError.parseFailure(data: data)))
+                if let result = data.flatMap(resource.parse) {
+                    completion(.success(result))
+                } else {
+                    completion(.failure(APIError.parseFailure(data: data)))
+                }
             } else if response.statusCode == 401 {
                 completion(.failure(APIError.unauthorized))
             } else {

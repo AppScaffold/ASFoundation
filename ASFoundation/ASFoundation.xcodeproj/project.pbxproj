@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		88758CD6231A0BC3001412D8 /* Device+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88758CD5231A0BC3001412D8 /* Device+Extension.swift */; };
 		88886F4F22EEDEF5000F5871 /* ASFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 88886F4D22EEDEF5000F5871 /* ASFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88886F7922EEDF03000F5871 /* BaseTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88886F5722EEDF03000F5871 /* BaseTableViewProvider.swift */; };
 		88886F7A22EEDF03000F5871 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88886F5822EEDF03000F5871 /* NibView.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88758CD5231A0BC3001412D8 /* Device+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+Extension.swift"; sourceTree = "<group>"; };
 		88886F4A22EEDEF5000F5871 /* ASFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88886F4D22EEDEF5000F5871 /* ASFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASFoundation.h; sourceTree = "<group>"; };
 		88886F4E22EEDEF5000F5871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				88886F6422EEDF03000F5871 /* ScrollView+Extension.swift */,
 				88A71BE722F73A5F007B278C /* Permission+Extension.swift */,
 				88A71BEA22F82FA4007B278C /* UIViewController+Extension.swift */,
+				88758CD5231A0BC3001412D8 /* Device+Extension.swift */,
 			);
 			path = "Helper(Extension)";
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				88886F8122EEDF03000F5871 /* Lock.swift in Sources */,
 				88886F7F22EEDF03000F5871 /* Optional+Extension.swift in Sources */,
 				88886F8822EEDF03000F5871 /* Dependency.swift in Sources */,
+				88758CD6231A0BC3001412D8 /* Device+Extension.swift in Sources */,
 				88886F8422EEDF03000F5871 /* Foundation+Extension.swift in Sources */,
 				88886F8C22EEDF03000F5871 /* APIError.swift in Sources */,
 				88886F8622EEDF03000F5871 /* CollectionViewLayout.swift in Sources */,
