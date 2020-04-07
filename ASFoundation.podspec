@@ -77,8 +77,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  # s.source       = { :git => "https://github.com/AppScaffold/ASFoundation.git", :tag => "#{s.version}" }
-  s.source	= {"http": "https://github.com/AppScaffold/ASFoundation/releases/download/0.0.7/ASFoundation.framework.zip"}
+  s.source       = { :git => "https://github.com/AppScaffold/ASFoundation.git" }
+  # s.source	= {"http": "https://github.com/AppScaffold/ASFoundation/releases/download/0.0.7/ASFoundation.framework.zip"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  # s.source_files  = "Source/**/*.swift"
+  s.source_files  = "Source/**/*.swift"
   # s.exclude_files = "Exclude/"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-  s.vendored_frameworks = "ASFoundation.framework"
+  # s.vendored_frameworks = "ASFoundation.framework"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
