@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ASFoundation"
-  s.version      = "0.0.8-SNAPSHOT"
+  s.version      = "0.0.8"
   s.summary      = "ASFoundation is fundamental libs."
 
   # This description is used to generate tags and improve search results.
